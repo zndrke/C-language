@@ -1,0 +1,43 @@
+프로그램명 : word_cnt
+
+Usage: ./word_cnt {data_file} {sort_method}
+  - {data_file} : text file
+  - {sort_method} :
+          - A : alphabet ascending
+          - D : alphabet descending
+          - M : max occurrence first
+          - I : min occurrence first
+
+출력형태 example
+a               : 101
+able            : 1
+about           : 9
+above           : 1
+abundance       : 1
+accidents       : 1
+accounts        : 1
+across          : 1
+afraid          : 4
+after           : 8
+afterward       : 1
+...
+yours           : 1
+---------------------
+distinct word cnt : 940
+total word cnt : 1329
+
+콜론까지의 길이는 16자로 정렬
+
+
+
+프로그램 역할 :
+주어진 텍스트 파일에서 word단위로 구분을 하고 동일한 word가 몇번씩 나오는지
+개수를 센다.
+문장부호는 제외한다.
+대소문자는 구분하지 않는다.(출력시 모두 소문자로 출력)
+
+참고사항:
+텍스트 파일의 크기는 예측할 수 없고 word의 개수도 예측할 수 없습니다.
+따라서 임의로 1000개 이렇게 잡으면 프로그램이 다운됩니다.
+처리할 수 있는 word개수가 동적으로 조절될 수 있도록 프로그래밍해야 합니다.
+
